@@ -1,0 +1,14 @@
+[package]
+name = "hex2string"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.86"
+hex = "0.4.3"
+
+[profile.release]
+strip = true      # Automatically strip symbols from the binary
+opt-level = "z"   # Optimize for size
+lto = true        # Link time optimization, removes dead code
+codegen-units = 1 # Allow for maximum size reduction optimizations
