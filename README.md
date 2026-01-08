@@ -1,6 +1,6 @@
 # Hex2string
 
-Hex2string description here.
+*Hex2string* is a simple command line tool that converts hexadecimal strings to normal strings.
 
 ## Installation
 
